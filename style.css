@@ -43,3 +43,43 @@ nav a:hover {
   margin-right: 8px;
   vertical-align: middle;
 }
+
+ #hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            background: url('main1.png') no-repeat center center/cover;
+            color: #fff;
+            padding: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        #hero h2 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            animation: fadeInUp 1.5s ease-in-out;
+        }
+
+        #hero p {
+            font-size: 1.5rem;
+            animation: fadeInUp 2s ease-in-out;
+        }
+
+        #hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+
+        #hero * {
+            position: relative;
+            z-index: 2;
+        }
