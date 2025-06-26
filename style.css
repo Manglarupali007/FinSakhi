@@ -1,0 +1,45 @@
+nav {
+    background: #fe8e88;
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+    color: #ff9187;
+    background: rgba(255, 255, 255, 0.9);
+    transform: translateY(-3px);
+}
+
+.logo img {
+  height: 28px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
